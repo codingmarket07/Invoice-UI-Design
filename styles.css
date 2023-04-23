@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Redressed&family=Ubuntu:wght@400;700&display=swap");
+
+:root {
+  --bg-clr: #df3c5b;
+  --white: #fff;
+  --invoice-left-bg: #e7e7e9;
+  --primary-clr: #2f2929;
+  --secondary-clr: #df3c5b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background: var(--bg-clr);
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--primary-clr);
+  padding: 0 20px;
+}
+
+.main_title {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--secondary-clr);
+}
+
+.p_title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.p_title > span {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.text_right {
+  text-align: right;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.divider {
+  width: 75px;
+  height: 3px;
+  background: var(--secondary-clr);
+  margin: 5px 0;
+}
+
+.invoice {
+  width: 800px;
+  max-width: 100%;
+  height: auto;
+  background: var(--white);
+  position: relative;
+  margin: 20px auto;
+  display: flex;
+}
+
+.invoice .invoice_left {
+  width: 275px;
+  background: var(--invoice-left-bg);
+  padding: 50px 40px;
+}
+
+.invoice .invoice_right {
+  width: 525px;
+  padding: 50px 40px;
+}
+
+.invoice .invoice_left > div,
+.invoice .invoice_right > div {
+  margin-bottom: 50px;
+}
+
+.invoice .invoice_left .i_logo p,
+.invoice .invoice_right .title {
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--secondary-clr);
+}
+
+.invoice .invoice_left .i_logo p {
+  font-family: "Redressed", cursive;
+}
+
+.invoice .w_15 {
+  width: 15%;
+}
+
+.invoice .w_50 {
+  width: 50%;
+}
+
+.invoice .w_55 {
+  width: 55%;
+}
+
+.invoice .i_table .i_row {
+  display: flex;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.invoice .i_table .i_row p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.invoice .i_table .i_row {
+  border-bottom: 1px solid var(--invoice-left-bg);
+}
+
+.invoice .i_table .i_table_head .i_row {
+  background: var(--invoice-left-bg);
+  border: 0;
+}
+
+.invoice .invoice_right .terms {
+  margin: 0;
+}
